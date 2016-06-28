@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zUl-u0-ATJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rR4-Lg-t1H">
+                                        <rect key="frame" x="0.0" y="86" width="316" height="30"/>
+                                        <state key="normal" title="mmap write test不预先设置文件大小"/>
+                                        <connections>
+                                            <action selector="onMWriteTestNotPreBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbs-Uu-A1g"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdR-tY-urd">
+                                        <rect key="frame" x="-1" y="118" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRP-Yb-KNG">
+                                        <rect key="frame" x="-1" y="142" width="316" height="30"/>
+                                        <state key="normal" title="mmap write test预先设置文件大小"/>
+                                        <connections>
+                                            <action selector="onMWriteTestPreBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EN-1O-aqF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVz-ax-NQy">
+                                        <rect key="frame" x="0.0" y="209" width="227" height="30"/>
+                                        <state key="normal" title="write test不预先设置文件大小"/>
+                                        <connections>
+                                            <action selector="onSTestNotPreBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e84-CT-DoJ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ziv-XP-25n">
+                                        <rect key="frame" x="0.0" y="180" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeB-zr-x7H">
+                                        <rect key="frame" x="0.0" y="247" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfv-hR-h19">
+                                        <rect key="frame" x="0.0" y="276" width="227" height="30"/>
+                                        <state key="normal" title="write test预先设置文件大小"/>
+                                        <connections>
+                                            <action selector="onSTestPreBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AL3-LY-WZ7"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMo-zs-Gmf">
+                                        <rect key="frame" x="0.0" y="314" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnw-AP-aJ0">
+                                        <rect key="frame" x="0.0" y="343" width="227" height="30"/>
+                                        <state key="normal" title="fwrite test不预先设置文件大小"/>
+                                        <connections>
+                                            <action selector="onCWriteTestNotPreBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4su-5Y-4LF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-LO-6xy">
+                                        <rect key="frame" x="0.0" y="381" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDo-zD-8tt">
+                                        <rect key="frame" x="0.0" y="410" width="227" height="30"/>
+                                        <state key="normal" title="fwrite test预先设置文件大小"/>
+                                        <connections>
+                                            <action selector="onCWriteTestPreBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zud-Bz-1YW"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5kq-d3-VzL">
+                                        <rect key="frame" x="240" y="39" width="121" height="29"/>
+                                        <segments>
+                                            <segment title="write"/>
+                                            <segment title="read"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="onSegmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hyf-pZ-iNX"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzr-si-h8g">
+                                        <rect key="frame" x="-1" y="448" width="600" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="ctestNotPreSetBtn" destination="mnw-AP-aJ0" id="559-FC-4vx"/>
+                        <outlet property="ctestPreSetBtn" destination="sDo-zD-8tt" id="lcV-co-e2X"/>
+                        <outlet property="cwriteNotPreLabel" destination="CvA-LO-6xy" id="QZI-rr-UVz"/>
+                        <outlet property="cwritePreLabel" destination="wzr-si-h8g" id="dN5-bn-WZB"/>
+                        <outlet property="mtestNotPreSetBtn" destination="rR4-Lg-t1H" id="cT5-ZR-55H"/>
+                        <outlet property="mtestPreSetBtn" destination="WRP-Yb-KNG" id="ngw-Gj-XTs"/>
+                        <outlet property="mwriteNotPreLabel" destination="IdR-tY-urd" id="a0I-cn-iy4"/>
+                        <outlet property="mwritePreLabel" destination="Ziv-XP-25n" id="6Ge-cm-ySn"/>
+                        <outlet property="stestNotPreSetBtn" destination="OVz-ax-NQy" id="YEu-Fn-sw8"/>
+                        <outlet property="stestPreSetBtn" destination="Qfv-hR-h19" id="j1M-Ww-9Lv"/>
+                        <outlet property="switchSegment" destination="5kq-d3-VzL" id="f3X-Da-bxX"/>
+                        <outlet property="swriteNotePreLabel" destination="NeB-zr-x7H" id="7Z6-uh-Ktl"/>
+                        <outlet property="swritePreLabel" destination="cMo-zs-Gmf" id="kTy-Va-M9d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="278"/>
+        </scene>
+    </scenes>
+</document>
